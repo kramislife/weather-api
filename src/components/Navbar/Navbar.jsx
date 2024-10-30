@@ -9,7 +9,7 @@ import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   return (
-    <nav className="mx-auto py-5 lg:px-10 px-5 sticky top-0">
+    <nav className="mx-auto py-7 lg:px-10 px-5 sticky top-0">
       <div className="flex items-center space-x-10">
         <div className="flex-shrink-0">
           <NavLink to="/">

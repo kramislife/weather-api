@@ -11,11 +11,12 @@ export default {
   		},
 		fontFamily: {
 			sans: ['Russo One', 'Chakra Petch', 'sans-serif'],
+			chakra: ['Chakra Petch', 'sans-serif'],
 		},
   		colors: {
 			base: '#1B1D1F',
 			surface: '#F3F3F3',
-			neutral: '#21394E',
+			// neutral: '#21394E',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

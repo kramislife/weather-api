@@ -23,12 +23,12 @@ const MobileNavbar = () => {
   return (
     <>
       {/* Toggle Button for Mobile Navbar */}
-      <div className="lg:hidden flex justify-end p-4">
+      <div className="lg:hidden flex justify-end">
         <button onClick={toggleMenu} aria-label="Toggle menu">
           {isOpen ? (
-            <X className="w-6 h-6 text-neutral-900" />
+            <X className="w-6 h-6 text-neutral-300" />
           ) : (
-            <LayoutGrid className="w-6 h-6 text-neutral-900" />
+            <LayoutGrid className="w-6 h-6 text-neutral-300 " />
           )}
         </button>
       </div>
@@ -49,7 +49,7 @@ const MobileNavbar = () => {
                     `block px-4 py-2 rounded-md transition-colors duration-200 ${
                       isActive
                         ? "text-accent bg-neutral/10"
-                        : "text-neutral hover:text-accent hover:bg-neutral/5"
+                        : "text-neutral hover:text-accent hover:bg-gray-700/20"
                     }`
                   }
                 >

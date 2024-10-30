@@ -27,7 +27,7 @@ const Condition = () => {
               loop
               muted
               autoPlay
-              className="w-16 h-16"
+              className="w-16 h-16 mt-2"
             ></video>
             <h1 className="text-xl text-stone-300 tracking-wide pt-2">98%</h1>
             <span className="text-md text-stone-400 font-chakra font-semibold">
@@ -41,7 +41,7 @@ const Condition = () => {
               loop
               muted
               autoPlay
-              className="w-16 h-16"
+              className="w-16 h-16 mt-2"
             ></video>
             <h1 className="text-xl text-stone-300 tracking-wide pt-2">100%</h1>
             <span className="text-md text-stone-400 font-chakra font-semibold">

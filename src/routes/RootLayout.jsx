@@ -1,5 +1,5 @@
-import ForecastNavbar from "@/components/Forecast/ForecastNavbar";
-import Temperature from "@/components/Hero/Temperature";
+import ForecastNavbar from "@/components/Navbar/ForecastNavbar";
+import Temperature from "@/pages/Hero/Temperature";
 import Navbar from "@/components/Navbar/Navbar";
 import React from "react";
 import { Outlet } from "react-router-dom";

@@ -1,24 +1,10 @@
-import { navItems } from "@/constant/Index";
+import { navItems } from "@/constant/NavItems";
+import { useMobileNavbar } from "@/hooks/useMobileNavbar";
 import { LayoutGrid, X } from "lucide-react";
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const MobileNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1024) {
-        // 1024px is the 'lg' breakpoint in Tailwind
-        setIsOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { isOpen, toggleMenu } = useMobileNavbar();
 
   return (
     <>
@@ -44,13 +30,11 @@ const MobileNavbar = () => {
               >
                 <NavLink
                   to={item.path}
-                  onClick={() => setIsOpen(false)}
+                  onClick={toggleMenu}
                   className={({ isActive }) =>
-                    `block px-4 py-2 rounded-md transition-colors duration-200 ${
-                      isActive
-                        ? "text-accent bg-neutral/10"
-                        : "text-neutral hover:text-accent hover:bg-gray-700/20"
-                    }`
+                    isActive
+                      ? "block px-4 py-2 rounded-md transition-colors duration-200"
+                      : "text-neutral hover:text-accent hover:bg-gray-700/20"
                   }
                 >
                   {item.name}

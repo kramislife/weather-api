@@ -1,12 +1,12 @@
 import React from "react";
-import { tomorrowForecast } from "@/constant/Index";
+import { TomorrowForecastItems } from "@/constant/TomorrowForecastItems";
 
 const TomorrowForecast = () => {
   return (
     <section>
       <div className="h-full w-full px-5 pt-5">
         <ul className="w-full grid gap-5">
-          {tomorrowForecast.map((item) => (
+          {TomorrowForecastItems.map((item) => (
             <li key={item.id} className="font-chakra font-semibold grid grid-cols-4 items-center">
               <h1 className="text-stone-300 text-lg">{item.time}</h1>
               <span className="text-stone-400 text-md font-bold text-center">{item.temperature}</span>

@@ -15,7 +15,7 @@ import windyCloud from '@/assets/windy-cloud.webm'
 import windy from '@/assets/windy.webm'
 
 
-export const tomorrowForecast = [
+export const TomorrowForecastItems = [
 {
     id: 1,
     time: '12:00 AM',

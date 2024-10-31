@@ -4,11 +4,11 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import RootLayout from "./routes/RootLayout";
-import TodayForecast from "./components/Forecast/TodayForecast";
-import TomorrowForecast from "./components/Forecast/TomorrowForecast";
-import SevenDaysForecast from "./components/Forecast/SevenDaysForecast";
-import ThirtyDaysForecast from "./components/Forecast/ThirtyDaysForecast";
+import RootLayout from "@/routes/RootLayout";
+import TodayForecast from "@/pages/Forecast/TodayForecast";
+import TomorrowForecast from "@/pages/Forecast/TomorrowForecast";
+import SevenDaysForecast from "@/pages/Forecast/SevenDaysForecast";
+import ThirtyDaysForecast from "@/pages/Forecast/ThirtyDaysForecast";
 
 const App = () => {
   const router = createBrowserRouter(

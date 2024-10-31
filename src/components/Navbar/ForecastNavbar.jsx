@@ -1,4 +1,4 @@
-import { forecastNavItems } from "@/constant/Index";
+import { forecastNavItems } from "@/constant/ForecastNavItems";
 import { NavLink } from "react-router-dom";
 
 const ForecastNavbar = () => {

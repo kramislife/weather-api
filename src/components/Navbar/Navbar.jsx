@@ -1,4 +1,4 @@
-import { navItems } from "@/constant/Index";
+import { navItems } from "@/constant/NavItems";
 import { NavLink } from "react-router-dom";
 import logo from "@/assets/larana.png";
 import { Search } from "lucide-react";

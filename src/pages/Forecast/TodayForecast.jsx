@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { forecastCarouselItems } from "@/constant/Index";
+import { TodayForecastItems } from "@/constant/TodayForecastItems";
 
 const TodayForecast = () => {
   return (
@@ -14,7 +14,7 @@ const TodayForecast = () => {
       <div className="flex h-full w-full px-5 overflow-hidden pt-5">
         <Carousel className="w-full">
           <CarouselContent className="-ml-1">
-            {forecastCarouselItems.map((item) => (
+            {TodayForecastItems.map((item) => (
               <CarouselItem
                 key={item.id}
                 className="basis-1/3 md:basis-1/2 lg:basis-1/3 pl-0"
@@ -39,8 +39,8 @@ const TodayForecast = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute -left-4 text-stone-300 bg-gray-700/20 border-none hover:bg-gray-700/40 hover:text-stone-200" />
-          <CarouselNext className="absolute -right-4 text-stone-300 bg-gray-700/20 border-none hover:bg-gray-700/40" />
+          <CarouselPrevious className="absolute -left-4 text-white bg-gray-700/20 border-none" />
+          <CarouselNext className="absolute -right-4 text-white bg-gray-700/20 border-none" />
         </Carousel>
       </div>
     </section>

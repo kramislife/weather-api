@@ -18,6 +18,7 @@ const TomorrowForecast = () => {
                 muted
                 playsInline
                 preload="auto"
+                loading="lazy"
               ></video>
               <span className="text-stone-400 text-md text-center tracking-wide">{item.description}</span>
             </li>

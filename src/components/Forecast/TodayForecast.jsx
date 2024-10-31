@@ -11,7 +11,7 @@ import { forecastCarouselItems } from "@/constant/Index";
 const TodayForecast = () => {
   return (
     <section>
-      <div className="flex h-full w-full px-5">
+      <div className="flex h-full w-full px-5 overflow-hidden">
         <Carousel className="w-full">
           <CarouselContent className="-ml-1">
             {forecastCarouselItems.map((item) => (
@@ -32,7 +32,7 @@ const TodayForecast = () => {
             ))}
           </CarouselContent>
           <CarouselPrevious className="absolute -left-4 text-stone-300 bg-gray-700/20 border-none hover:bg-gray-700/40 hover:text-stone-200" />
-          <CarouselNext className="absolute -right-4 text-stone-300 bg-gray-700/20 border-none hover:bg-gray-700/40 hover:text-stone-200" />
+          <CarouselNext className="absolute -right-4 text-stone-300 bg-gray-700/20 border-none hover:bg-gray-700/40" />
         </Carousel>
       </div>
     </section>

@@ -5,7 +5,7 @@ const Temperature = () => {
   return (
     <section>
       <div className="flex justify-between h-full p-5">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col  justify-center">
           <h1 className="text-7xl font-bold pb-4">18°</h1>
           <span className="text-xl  text-stone-400">Thunderstorm</span>
         </div>
@@ -14,7 +14,10 @@ const Temperature = () => {
           <video src={storm} autoPlay loop muted></video>
         </div>
       </div>
-      <h1 className="text-lg text-stone-400 px-5 pt-5 tracking-wide font-chakra font-semibold">
+      <h1 className="text-lg text-stone-200 px-5 pt-5 tracking-wide font-chakra font-semibold">
+        Philippines
+      </h1>
+      <h1 className="text-md text-stone-400 px-5 pb-2 tracking-wide font-chakra font-semibold">
         Saturday, 30 October 2024
       </h1>
 

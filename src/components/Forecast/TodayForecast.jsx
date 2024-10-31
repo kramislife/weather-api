@@ -19,10 +19,10 @@ const TodayForecast = () => {
                 key={item.id}
                 className="basis-1/3 md:basis-1/2 lg:basis-1/3 pl-0"
               >
-                <div className="p-1">
+                <div className="flex items-center justify-center p-1">
                   <Card className="bg-gray-700/20 border-none rounded-2xl shadow-lg">
                     <CardContent className="flex flex-col gap-5 aspect-square items-center justify-center p-6">
-                      <span className="text-stone-300">{item.time}</span>
+                      <span className="text-stone-300 text-center">{item.time}</span>
                       <video
                         autoPlay
                         muted

@@ -10,7 +10,15 @@ const TomorrowForecast = () => {
             <li key={item.id} className="font-chakra font-semibold grid grid-cols-4 items-center">
               <h1 className="text-stone-300 text-lg">{item.time}</h1>
               <span className="text-stone-400 text-md font-bold text-center">{item.temperature}</span>
-              <video className="h-10 w-10 mx-auto" src={item.condition} autoPlay loop muted></video>
+              <video 
+                className="h-10 w-10 mx-auto" 
+                src={item.condition} 
+                autoPlay 
+                loop 
+                muted
+                playsInline
+                preload="auto"
+              ></video>
               <span className="text-stone-400 text-md text-center tracking-wide">{item.description}</span>
             </li>
           ))}

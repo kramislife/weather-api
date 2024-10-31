@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="mx-auto py-7 lg:px-10 px-5 sticky top-0">
       <div className="flex items-center space-x-10">
         <div className="flex-shrink-0">
-          <NavLink to="/">
+          <NavLink to="/today">
             <img src={logo} alt="logo" className="w-12 h-12" />
           </NavLink>
         </div>

@@ -4,7 +4,7 @@ import { tomorrowForecast } from "@/constant/Index";
 const TomorrowForecast = () => {
   return (
     <section>
-      <div className="h-full w-full px-5 py-10">
+      <div className="h-full w-full px-5 pt-5">
         <ul className="w-full grid gap-5">
           {tomorrowForecast.map((item) => (
             <li key={item.id} className="font-chakra font-semibold grid grid-cols-4 items-center">

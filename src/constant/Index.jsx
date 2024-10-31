@@ -42,11 +42,12 @@ export const navItems = [
     }
 ]
 
+// For Forecast Navbar
 export const forecastNavItems = [
     {
         id: 1,
         name: 'Today',
-        path: '/today',
+        path: '/',
     },
     {
         id: 2,

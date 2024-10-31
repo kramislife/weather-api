@@ -5,8 +5,8 @@ const Temperature = () => {
   return (
     <section>
       <div className="flex justify-between h-full p-5">
-        <div className="flex flex-col  justify-center">
-          <h1 className="text-7xl font-bold pb-4">18°</h1>
+        <div className="flex flex-col justify-center">
+          <h1 className="text-7xl font-semibold pb-4">18° C</h1>
           <span className="text-xl  text-stone-400">Thunderstorm</span>
         </div>
 

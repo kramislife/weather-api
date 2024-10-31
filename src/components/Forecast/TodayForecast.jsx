@@ -6,12 +6,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { forecastCarouselItems } from "@/constant/Index";  
+import { forecastCarouselItems } from "@/constant/Index";
 
 const TodayForecast = () => {
   return (
     <section>
-      <div className="flex h-full w-full px-5 overflow-hidden">
+      <div className="flex h-full w-full px-5 overflow-hidden pt-5">
         <Carousel className="w-full">
           <CarouselContent className="-ml-1">
             {forecastCarouselItems.map((item) => (

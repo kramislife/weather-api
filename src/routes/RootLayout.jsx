@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 const RootLayout = () => {
   return (
-    <div className="bg-base text-surface  lg:h-full w-screen pb-10">
+    <div className="bg-base text-surface min-h-screen w-full pb-10">
       <Navbar />
       <Temperature />
       <ForecastNavbar />

@@ -48,3 +48,36 @@ export const forecastNavItems = [
         path: '/next-30-days',
     }
 ]
+
+export const forecastCarouselItems = [
+    {
+        id: 1,
+        time: '12:00',
+        temperature: '25°C',
+        condition: 'Sunny',
+    },
+    {
+        id: 2,
+        time: '13:00',
+        temperature: '26°C',
+        condition: 'Cloudy',
+    },
+    {
+        id: 3,
+        time: '14:00',
+        temperature: '27°C',
+        condition: 'Rainy',
+    },
+    {
+        id: 4,
+        time: '15:00',
+        temperature: '28°C',
+        condition: 'Humid',
+    },
+    {
+        id: 5,
+        time: '16:00',
+        temperature: '29°C',
+        condition: 'Sunny',
+    }
+]

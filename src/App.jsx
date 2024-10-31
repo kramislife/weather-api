@@ -7,7 +7,7 @@ import {
 import RootLayout from "@/routes/RootLayout";
 import TodayForecast from "@/pages/Forecast/TodayForecast";
 import TomorrowForecast from "@/pages/Forecast/TomorrowForecast";
-import SevenDaysForecast from "@/pages/Forecast/SevenDaysForecast";
+import SevenDaysForecast from "@/pages/Forecast/DailyForecast";
 import ThirtyDaysForecast from "@/pages/Forecast/ThirtyDaysForecast";
 
 const App = () => {

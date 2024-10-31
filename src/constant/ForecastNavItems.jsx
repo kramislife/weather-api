@@ -11,12 +11,12 @@ export const forecastNavItems = [
     },
     {
         id: 3,
-        name: '7 Days',
+        name: 'Daily',
         path: '/next-7-days',
     }, 
     {
         id: 4,
-        name: '30 Days',
+        name: 'Monthly',
         path: '/next-30-days',
     }
 ]

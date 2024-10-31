@@ -21,9 +21,17 @@ const TodayForecast = () => {
               >
                 <div className="p-1">
                   <Card className="bg-gray-700/20 border-none rounded-2xl shadow-lg">
-                    <CardContent className="flex flex-col gap-2 aspect-square items-center justify-center p-6">
+                    <CardContent className="flex flex-col gap-5 aspect-square items-center justify-center p-6">
                       <span className="text-stone-300">{item.time}</span>
-                      <span className="text-stone-300">{item.condition}</span>
+                      <video
+                        autoPlay
+                        muted
+                        playsInline
+                        loop
+                        loading="lazy"
+                        className="text-stone-300 h-12 w-12"
+                        src={item.condition}
+                      />
                       <span className="text-stone-300">{item.temperature}</span>
                     </CardContent>
                   </Card>

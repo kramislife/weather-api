@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { forecastCarouselItems } from "@/constant/Index";
+import { forecastCarouselItems } from "@/constant/Index";  
 
 const TodayForecast = () => {
   return (

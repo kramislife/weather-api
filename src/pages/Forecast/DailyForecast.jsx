@@ -8,9 +8,9 @@ const DailyForecast = () => {
         {DailyForecastItems.map((item) => (
           <div
             key={item.id}
-            className="bg-gray-700/20 rounded-2xl px-5 py-8 mx-4 my-3 space-y-5"
+            className="bg-gray-700/20 rounded-2xl p-5 mx-4 my-3 space-y-8"
           >
-            <div className="flex flex-row items-center w-full space-x-10">
+            <div className="flex flex-row justify-between items-center w-full space-x-10">
               <div>
                 <h1 className="font-chakra text-sm tracking-wide">
                   {item.name}
@@ -76,7 +76,7 @@ const DailyForecast = () => {
                       Heat Index:{" "}
                       <span className="text-stone-400">{item.heatIndex}</span>
                     </h1>
-                    <h1 className="text-stone-300">
+                    <h1 className="text-stone-300 font-bold">
                       Wind:{" "}
                       <span className="text-stone-400">
                         {item.wind.speed} {item.wind.direction}
@@ -84,11 +84,11 @@ const DailyForecast = () => {
                     </h1>
                   </div>
                   <div className="flex flex-col gap-5">
-                    <h1 className="text-stone-300">
+                    <h1 className="text-stone-300 font-bold">
                       Cloud Cover:{" "}
                       <span className="text-stone-400">{item.cloudCover}</span>
                     </h1>
-                    <h1 className="text-stone-300">
+                    <h1 className="text-stone-300 font-bold">
                       Dew Point:{" "}
                       <span className="text-stone-400">{item.dewPoint}</span>
                     </h1>

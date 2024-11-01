@@ -50,7 +50,7 @@ export const DailyForecastItems = [
         description: 'Stormy Showers',
         humidity: '65%',
         alerts: [{
-            category: 'Typhoon',
+            category: 'Tornado Warning',
             severity: 'Category 3',
             description: 'Strong winds and heavy rainfall expected',
             timing: {
@@ -80,21 +80,7 @@ export const DailyForecastItems = [
         condition: mist,
         description: 'Misty',
         humidity: '70%',
-        alerts: [{
-            category: 'Flood',
-            severity: 'Moderate',
-            description: 'Possible flooding in low-lying areas',
-            timing: {
-                from: {
-                    time: '6:00 AM',
-                    day: 'Wednesday'
-                },
-                to: {
-                    time: '6:00 PM',
-                    day: 'Wednesday'
-                }
-            }
-        }],
+        alerts: null,
         heatIndex: '25°C',
         wind: {
             speed: '35 km/h',
@@ -112,7 +98,7 @@ export const DailyForecastItems = [
         description: 'Rainy',
         humidity: '75%',
         alerts: [{
-            category: 'Heavy Rain',
+            category: 'Flash Flood',
             severity: 'High',
             description: 'Continuous heavy rainfall expected',
             timing: {
@@ -143,7 +129,7 @@ export const DailyForecastItems = [
         description: 'Thunderstorm',
         humidity: '80%',
         alerts: [{
-            category: 'Landslide',
+            category: 'Severe Thunderstorm',
             severity: 'High',
             description: 'Risk of landslides in mountainous areas',
             timing: {
@@ -173,21 +159,7 @@ export const DailyForecastItems = [
         condition: windyCloud,
         description: 'Windy with Clouds',
         humidity: '85%',
-        alerts: [{
-            category: 'Storm Surge',
-            severity: 'Moderate',
-            description: 'Coastal areas may experience storm surge',
-            timing: {
-                from: {
-                    time: '3:00 PM',
-                    day: 'Saturday'
-                },
-                to: {
-                    time: '9:00 PM',
-                    day: 'Saturday'
-                }
-            }
-        }],
+        alerts: null,
         heatIndex: '21°C',
         wind: {
             speed: '50 km/h',
@@ -205,7 +177,7 @@ export const DailyForecastItems = [
         description: 'Windy',
         humidity: '90%',
         alerts: [{
-            category: 'Wind',
+            category: 'Hurricane Warning',
             severity: 'High',
             description: 'Strong gusty winds expected',
             timing: {

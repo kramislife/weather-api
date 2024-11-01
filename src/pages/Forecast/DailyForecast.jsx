@@ -4,12 +4,17 @@ import { Droplet, TriangleAlert } from "lucide-react";
 const DailyForecast = () => {
   return (
     <section>
-      <div className="bg-gray-700/20 rounded-2xl p-5 mx-4 my-3 space-y-5">
+      <div className="space-y-5">
         {DailyForecastItems.map((item) => (
-          <div key={item.id} className="space-y-4">
+          <div
+            key={item.id}
+            className="bg-gray-700/20 rounded-2xl px-5 py-8 mx-4 my-3 space-y-5"
+          >
             <div className="flex flex-row items-center w-full space-x-10">
               <div>
-                <h1 className="font-chakra text-sm tracking-wide">{item.name}</h1>
+                <h1 className="font-chakra text-sm tracking-wide">
+                  {item.name}
+                </h1>
                 <span className="text-sm text-stone-400 font-chakra">
                   {item.date}
                 </span>
@@ -26,8 +31,8 @@ const DailyForecast = () => {
                   <h1 className="text-4xl tracking-wide">{item.temperature}</h1>
                 </div>
                 <div>
-                  <span className="text-md text-stone-400 font-chakra flex gap-1">
-                    <Droplet />
+                  <span className="flex items-center text-md text-stone-400 font-chakra gap-1">
+                    <Droplet size={16} />
                     {item.humidity}
                   </span>
                 </div>
@@ -48,7 +53,10 @@ const DailyForecast = () => {
                   >
                     <div>
                       {alert.category}{" "}
-                      <span className="text-stone-200"> - {alert.description}</span>
+                      <span className="text-stone-200">
+                        {" "}
+                        - {alert.description}
+                      </span>
                     </div>
                     <div className="text-xs text-stone-300">
                       {alert.timing.from.time} {alert.timing.from.day} -{" "}
@@ -65,7 +73,8 @@ const DailyForecast = () => {
                 <div className="flex justify-between">
                   <div className="flex flex-col gap-5">
                     <h1 className="text-stone-300 font-bold">
-                      Heat Index: <span className="text-stone-400">{item.heatIndex}</span>
+                      Heat Index:{" "}
+                      <span className="text-stone-400">{item.heatIndex}</span>
                     </h1>
                     <h1 className="text-stone-300">
                       Wind:{" "}
@@ -76,10 +85,12 @@ const DailyForecast = () => {
                   </div>
                   <div className="flex flex-col gap-5">
                     <h1 className="text-stone-300">
-                      Cloud Cover: <span className="text-stone-400">{item.cloudCover}</span>
+                      Cloud Cover:{" "}
+                      <span className="text-stone-400">{item.cloudCover}</span>
                     </h1>
                     <h1 className="text-stone-300">
-                      Dew Point: <span className="text-stone-400">{item.dewPoint}</span>
+                      Dew Point:{" "}
+                      <span className="text-stone-400">{item.dewPoint}</span>
                     </h1>
                   </div>
                 </div>
